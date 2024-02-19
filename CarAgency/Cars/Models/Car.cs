@@ -1,8 +1,10 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 namespace Cars.Models
 {
 	public class Car
 	{
+        [Key]
         public long id { get; set; }
         public string plate { get; set; }
         public string vin { get; set; }

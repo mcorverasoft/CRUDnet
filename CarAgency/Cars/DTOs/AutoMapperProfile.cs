@@ -10,7 +10,6 @@ namespace Cars.DTOs
         public AutoMapperProfile()
         {
             CreateMap<Car, CarDTO>();
-            // Agrega más configuraciones de mapeo según sea necesario
         }
     }
 }

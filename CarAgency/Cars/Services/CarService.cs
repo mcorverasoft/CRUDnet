@@ -3,6 +3,7 @@ using Cars.DataAccess;
 using Cars.Models;
 using Cars.DTOs;
 using AutoMapper;
+using System.Runtime.ConstrainedExecution;
 
 namespace Cars.Services
 {
@@ -51,20 +52,22 @@ namespace Cars.Services
 
             if (carToUpdate == null)
                 return false;
-
-            var config = new MapperConfiguration(cfg => cfg.CreateMap<CarDTO, Car>());
-            var mapper = new Mapper(config);
-            Car car = mapper.Map<CarDTO, Car>(carDTO);
-            car.id = id;
+            carToUpdate.brand = carDTO.brand;
+            carToUpdate.color = carDTO.color;
+            carToUpdate.doors = carDTO.doors;
+            carToUpdate.plate = carDTO.plate;
+            carToUpdate.serie = carDTO.serie;
+            carToUpdate.vin = carDTO.vin;
+            carToUpdate.year = carDTO.year;
             try
             {
-                _dbContext.Car.Update(car);
+                _dbContext.Car.Update(carToUpdate);
                 _dbContext.SaveChanges();
                 updated = true;
             }
             catch (Exception e)
             {
-
+                Console.WriteLine(e);
             }
 
             return updated;
