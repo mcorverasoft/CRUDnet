@@ -1,0 +1,5 @@
+/Users/miltoncorvera/source/dotnet/CRUDnet/CarAgency/Cars.Tests/obj/Debug/net7.0/Cars.Tests.csproj.AssemblyReference.cache
+/Users/miltoncorvera/source/dotnet/CRUDnet/CarAgency/Cars.Tests/obj/Debug/net7.0/Cars.Tests.GeneratedMSBuildEditorConfig.editorconfig
+/Users/miltoncorvera/source/dotnet/CRUDnet/CarAgency/Cars.Tests/obj/Debug/net7.0/Cars.Tests.AssemblyInfoInputs.cache
+/Users/miltoncorvera/source/dotnet/CRUDnet/CarAgency/Cars.Tests/obj/Debug/net7.0/Cars.Tests.AssemblyInfo.cs
+/Users/miltoncorvera/source/dotnet/CRUDnet/CarAgency/Cars.Tests/obj/Debug/net7.0/Cars.Tests.csproj.CoreCompileInputs.cache
